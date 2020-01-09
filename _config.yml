@@ -1,3 +1,5 @@
 # theme: jekyll-theme-minimal
 name: Georges Nomicos
 markdown: kramdown
+kramdown:
+  parse_block_html: true
