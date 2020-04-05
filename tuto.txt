@@ -1,0 +1,7 @@
+Using Jekkyl to generate html pages from layouts
+
+folders:
+    layout: for injecting some content
+    site: generated html pages
+    post: must follow YYYY-MM-DD-title-of-my-post.mdg
+The top banner is for choosing layout and passing variables to html page

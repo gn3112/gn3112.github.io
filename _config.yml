@@ -1,4 +1,4 @@
 # theme: jekyll-theme-minimal
 name: Georges Nomicos
 markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
+permalink: /project/:year/:month/:day/:title
