@@ -5,3 +5,6 @@ folders:
     site: generated html pages
     post: must follow YYYY-MM-DD-title-of-my-post.mdg
 The top banner is for choosing layout and passing variables to html page
+
+Markdown syntax:
+https://daringfireball.net/projects/markdown/basics
