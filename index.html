@@ -1,10 +1,39 @@
 ---
 layout: default
-title: Georges Nomicos
+title: My projects
 ---
 <div class="blurb">
-	<h1>Hi there! I am Georges Nomicos
-		Welcome to my interests and projects</h1>
-	<p> ... <a href="/about">Read more about my life...</a></p>
-	<img src="blue.png"/>
+	<div class="container">
+		<h2>{{ page.title }}</h2>
+			<ul class="posts">
+			{% for post in site.posts %}
+			<div class="card card-body mb-2">
+				<div class="row">
+				<div class="col-md-6 col-lg-4" style="--bs-aspect-ratio: 50%">
+					
+					<img src="/assets/{{ post.image }}" class="pb-2" style="height: 150px; width: 100%; object-fit: contain;"/>
+					
+				</div>
+				<div class="col-md-6 col-lg-8">
+					<ul class="list-unstyled m-0">
+					<a href="{{ post.url }}"><b>{{ post.title }}</b></a>
+					<li style="font-size: small;">{{ post.date | date_to_string }}</li>
+					<li style="padding-top: 12px;">
+						<p style="font-size: medium;">
+							{{ post.description }}
+						</p>
+					</li>
+					<li>
+						<ul class="list-inline mt-2">
+							<li class="list-inline-item" style="font-size: medium;"><a href="{{ post.link1_href }}">{{ post.link1 }}</a></li>
+							<li class="list-inline-item" style="font-size: medium;"><a href="{{ post.link2_href }}">{{ post.link2 }}</a></li>
+						</ul>
+					</li>
+					</ul>
+				</div>
+				</div>
+			</div>
+			{% endfor %}
+			</ul>
+	</div><!-- /.container -->
 </div><!-- /.blurb -->
