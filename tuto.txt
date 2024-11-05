@@ -8,3 +8,7 @@ The top banner is for choosing layout and passing variables to html page
 
 Markdown syntax:
 https://daringfireball.net/projects/markdown/basics
+
+Add md file in _post 
+Run jekyll build
+html page created in _site
